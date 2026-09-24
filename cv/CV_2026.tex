@@ -1,0 +1,163 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\definecolor{accent}{HTML}{1a1a1a}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Custom commands for entries
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\par\vspace{2pt}
+}
+
+\setlist[itemize]{leftmargin=1.4em, topsep=2pt, itemsep=1pt, parsep=0pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+  {\LARGE \textbf{S M Abdulla Al Mamun}}\\[4pt]
+  Manchester, United Kingdom \enspace$|$\enspace +44 7448 384375 \enspace$|$\enspace
+  \href{mailto:abdulla5akash@gmail.com}{abdulla5akash@gmail.com} \enspace$|$\enspace
+  \href{https://github.com/Abdulla4akash}{github.com/Abdulla4akash}
+\end{center}
+
+% ===== EDUCATION =====
+\section{Education}
+\entry{The University of Manchester}{Manchester, UK}{Master of Science (M.Sc.) in Artificial Intelligence}{2025 -- 2026 (Ongoing)}
+
+\entry{BRAC University}{Dhaka, Bangladesh}{Master of Science (M.Sc.) in Computer Science and Engineering --- CGPA: 4.00/4.00}{2025}
+
+\entry{BRAC University}{Dhaka, Bangladesh}{Bachelor of Science (B.Sc.) in Computer Science and Engineering --- CGPA: 3.70/4.00}{2021}
+
+% ===== RESEARCH EXPERIENCE =====
+\section{Research Experience}
+\entry{Information Management Group (IMG), The University of Manchester}{Manchester, UK}{MSc Dissertation Researcher --- Dynamic Resource Management for Intelligent Transportation Systems}{2026 -- Present}
+\begin{itemize}
+  \item Researching resource-aware decision-making in vehicular edge computing (VEC), where tasks must be offloaded, placed, admitted, and executed across finite roadside infrastructure under changing traffic, workload, and communication conditions.
+  \item Developed \textbf{TrafficTwin}, an auditable research platform integrating traffic simulation and edge-computing experiments to evaluate resource-allocation policies with reproducible lifecycle, latency, deadline-attainment, and rejection accounting.
+  \item Evaluated multi-agent reinforcement learning and deterministic scheduling/placement strategies for task execution across roadside units (RSUs), including constrained admission, forwarding, and load-distribution mechanisms.
+  \item Built reproducible data and evidence pipelines for Manchester-oriented traffic scenarios, combining SUMO-based experimentation with real-world traffic-data integration and exact provenance for research validation.
+  \item Supervised by \textbf{Dr Sandra Sampaio}; research focus: dynamic resource management, intelligent transportation systems, vehicular edge computing, and resource-aware applied AI/ML.
+\end{itemize}
+
+\entry{Computer Vision and Intelligent Systems (CVIS) Lab, BRAC University}{Dhaka, Bangladesh}{Research Assistant}{2021 -- 2023}
+\begin{itemize}
+  \item Led the end-to-end research lifecycle for ``An Interpretable Transformer-Based Approach to Classify Malaria from Blood Cell Images,'' from literature review and experimental design to manuscript preparation and peer-reviewed publication.
+  \item Developed and benchmarked advanced deep learning frameworks (Vision Transformer, Swin Transformer, VGG16), optimizing model hyperparameters to achieve a state-of-the-art classification accuracy of 96.04\%.
+  \item Architected a robust, scalable data processing pipeline for 27,558 medical images, implementing strict protocols for normalization, geometric augmentation, and train-validation-test splitting to ensure model generalizability.
+  \item Integrated Explainable AI (XAI) methodologies, utilizing Grad-CAM to generate saliency maps that visualized the model's attention mechanisms, bridging the gap between black-box AI and clinical interpretability.
+  \item Collaborated with multidisciplinary academic teams to synthesize research findings, presenting methodology and results at international conferences.
+\end{itemize}
+
+\entry{Intelligent Systems for Health}{Dhaka, Bangladesh}{Researcher}{2023 -- 2025}
+\begin{itemize}
+  \item Assisted in publications related to efficient healthcare systems in Bangladesh.
+  \item Authored 2 academic papers pertaining to morbid diseases.
+  \item Developed a Dialectical Behavior Therapy (DBT) app with AI integration.
+\end{itemize}
+
+% ===== PUBLICATIONS =====
+\section{Publications}
+\begin{itemize}
+  \item S. M. Dipto, M. Islam, S. M. A. Al Mamun, M. K. Hossain, A. M. Esfar-E.-Alam and M. A. Alam, ``An Interpretable Transformer-Based Approach to Classify Malaria from Blood Cell Images,'' in \textit{2024 International Conference on Sustainable Technology and Engineering (i-COSTE)}, Perth, Australia, 2024, pp. 1--6.
+\end{itemize}
+
+% ===== TEACHING EXPERIENCE =====
+\section{Teaching Experience}
+\entry{Selim Reza Habib Degree College}{Pabna, Bangladesh}{Lecturer, Department of ICT}{Jun 2023 -- Dec 2023}
+\begin{itemize}
+  \item Taught ICT for higher secondary school students; prepared questions and effective modules.
+\end{itemize}
+
+% ===== PROFESSIONAL EXPERIENCE =====
+\section{Professional Experience}
+\entry{ByteWave}{Dhaka, Bangladesh}{Machine Learning Engineer}{2023 -- 2025}
+\begin{itemize}
+  \item Engineered and deployed a time-series demand forecasting model (Prophet, XGBoost) to predict SKU-level inventory needs, minimizing warehouse holding costs and preventing stockouts for international imports.
+  \item Developed a predictive supply chain model to estimate the actual arrival time of overseas shipping containers, significantly improving the accuracy of customer-facing restock notifications.
+  \item Designed and integrated a collaborative filtering recommendation system that served personalized product suggestions via REST APIs, increasing the platform's average order value.
+\end{itemize}
+
+\entry{ByteWave}{Dhaka, Bangladesh}{Backend Software Engineer}{2022 -- 2023}
+\begin{itemize}
+  \item Architected robust backend APIs in Python (FastAPI) to support e-commerce operations, laying the data infrastructure foundation for future machine learning pipelines.
+  \item Built a dynamic pricing engine that automatically adjusted product prices based on real-time warehouse inventory levels and shipping container costs.
+\end{itemize}
+
+\entry{Lumina Global}{Dhaka, Bangladesh}{Java Backend Developer}{2019 -- 2020}
+\begin{itemize}
+  \item Engineered scalable RESTful APIs using Java and Spring Boot to power real-time order tracking and inventory management modules, processing over 15,000 daily supply chain transactions.
+  \item Integrated external carrier APIs and AWS S3 to automate cloud storage, securely processing and archiving over 2,000 digital invoices and shipment documents weekly.
+  \item Optimized backend database interactions using Spring Data JPA and PostgreSQL, reducing query latency by 35\% on complex multi-warehouse inventory search queries.
+  \item Authored comprehensive unit and integration tests using JUnit and Mockito, achieving 85\% code coverage across core order-processing microservices and significantly minimizing production defects.
+\end{itemize}
+
+% ===== PROJECTS =====
+\section{Projects}
+\entry{MasalaEngine}{Academic Project}{Lead Developer}{2026}
+\begin{itemize}
+  \item Led the development of a highly accurate Retrieval-Augmented Generation (RAG) pipeline for a specialized culinary corpus, achieving 95.20\% Recall@5 and 0.857 nDCG@5.
+  \item Implemented a hybrid retrieval architecture combining dense vector search (FAISS, BGE embeddings) with sparse keyword search (BM25), optimized by a Cross-Encoder re-ranker.
+  \item Evaluated and benchmarked multiple token-chunking strategies (recursive vs. fixed-size) to maximize context retention within strict 250-token budgets.
+  \item Engineered strict, grounded prompts with deterministic decoding to prevent LLM hallucinations, validating output quality using BERTScore and lexical semantic similarity metrics.
+\end{itemize}
+
+\entry{PaperStack (Literature IDE)}{Personal Project}{Creator \& Lead Developer}{2025 -- 2026}
+\begin{itemize}
+  \item Engineered a full-stack, multimodal RAG platform (FastAPI, React, PostgreSQL) designed as an interactive ``Literature IDE'' for querying and reasoning over ML/AI research papers.
+  \item Architected an advanced document ingestion pipeline utilizing PyMuPDF and GPT-5.5 vision models to accurately extract structured claims, empirical metrics, and table/figure data.
+  \item Developed a hybrid search engine combining pgvector semantic search with full-text keyword search, fused via Reciprocal Rank Fusion (RRF) and optimized by LLM listwise re-ranking.
+  \item Integrated GraphRAG capabilities and an interactive D3-force network graph to map out conceptual relationships, citations, and dataset performance comparisons across the library.
+\end{itemize}
+
+\entry{SkillSight UK}{Personal Project}{Machine Learning Engineer}{2026}
+\begin{itemize}
+  \item Developed an automated NLP pipeline to extract a 13-category skill taxonomy from UK data/business analyst job postings, evaluating against a manually annotated gold-standard corpus.
+  \item Architected a rigorous evaluation framework incorporating stratified nested cross-validation, bootstrapping, and inductive TF-IDF scoring to systematically eliminate data leakage.
+  \item Engineered and benchmarked multiple lexical baselines (cosine similarity vs. weighted lexical TF-IDF), achieving a peak 0.938 Macro-F1 score on the internal holdout set.
+\end{itemize}
+
+% ===== TECHNICAL SKILLS =====
+\section{Technical Skills}
+\begin{itemize}
+  \item \textbf{Programming \& Development:} Java, Python, JavaScript, MERN Stack, Spring Boot, Laravel, MySQL, MariaDB, MongoDB, MASM, PHP.
+  \item \textbf{Software \& Analysis:} TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, R, SPSS, STATA, Tableau, MATLAB, Mathematica, MS Office Suite.
+  \item \textbf{Interpersonal:} Project Management, Leadership, Negotiation, Public Speaking, Cultural Awareness.
+  \item \textbf{Languages:} English (Fluent, PTE Score: 90/90), Bengali (Native).
+\end{itemize}
+
+% ===== GRANTS, AWARDS, AND SCHOLARSHIPS =====
+\section{Grants, Awards, and Scholarships}
+\begin{itemize}
+  \item National Science and Technology (NST) Fellowship --- Ministry of Science and Technology, Government of Bangladesh, 2026
+  \item Commonwealth Masters Scholarship, UK --- 2025
+  \item Science and Technology Fellowship (MS abroad) --- Science and Technology Fellowship Trust, Ministry of Science and Technology, 2024
+  \item Merit Based Scholarship, BRAC University --- 2018
+  \item Secondary School Certificate Scholarship, Dhaka --- 2014
+  \item Junior School Certificate Scholarship, Dhaka --- 2011
+\end{itemize}
+
+% ===== VOLUNTEERING & ACTIVITIES =====
+\section{Volunteering \& Activities}
+\begin{itemize}
+  \item Robotics Club, BRAC University: Member of the Mongol Tori team (2018 -- 2022).
+  \item Computer Club, BRAC University: Programming Mentor.
+  \item Mathematics and Natural Sciences Club: Member (2018 -- 2022).
+  \item Community Service: Community Teacher, Residential Community.
+\end{itemize}
+
+\end{document}
